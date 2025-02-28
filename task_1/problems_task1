@@ -1,0 +1,169 @@
+
+EX1:
+
+#include <stdio.h>
+
+int main() {
+  printf("##########Console-output###\n");
+  printf("C Programming\n");
+  printf("###########################\n");
+  printf("\n");
+  printf("########################################################################");
+  return 0;
+}
+
+------------------------------------------------------------------------
+
+EX2:
+
+#include <stdio.h>
+
+int main() {
+
+    int num ;
+
+  printf("##########Console-output###\n");
+  printf("Enter a integer:");
+  scanf("%d",&num);
+  printf("You entered:%d\n",num);
+  printf("###########################\n");
+  printf("\n");
+  printf("########################################################################");
+  return 0;
+}
+
+------------------------------------------------------------------------
+
+EX3:
+
+#include <stdio.h>
+
+int main() {
+
+    int num1;
+    int num2;
+    int sum;
+
+  printf("##########Console-output###\n");
+  printf("Enter two integers:");
+  scanf("%d",&num1);
+  scanf("%d",&num2);
+  sum=num1+num2;
+  printf("Sum:%d\n",sum);
+  printf("###########################\n");
+  printf("\n");
+  printf("########################################################################");
+  return 0;
+}
+
+------------------------------------------------------------------------
+
+EX4:
+
+#include <stdio.h>
+
+int main() {
+
+    float num1;
+    float num2;
+    float Product;
+
+  printf("##########Console-output###\n");
+  printf("Enter two numbers:");
+  scanf("%f",&num1);
+  scanf("%f",&num2);
+  Product = num1 * num2;
+  printf("Product:%f\n",Product);
+ 
+  printf("########################################################################");
+  return 0;
+}
+
+
+------------------------------------------------------------------------
+
+EX5:
+
+#include<stdio.h>
+
+int main(){
+    
+    char ch;
+
+  printf("##########Console-output###\n");
+  printf("Enter a character:");
+  scanf("%c",&ch);
+  printf("ASCII value of %c = %d\n",ch ,ch);
+ 
+  printf("########################################################################");
+
+
+
+    return 0 ;
+
+}
+
+------------------------------------------------------------------------
+
+EX6:
+
+
+#include<stdio.h>
+
+int main(){
+    
+ 
+       float a ;
+    float b;
+    float temp;
+
+  printf("##########Console-output###\n");
+  printf("Enter value of a:");
+  scanf("%f",&a);
+  printf("Enter value of b:");
+  scanf("%f",&b);
+
+
+  temp=a;
+  a=b;
+  b=temp;
+
+  printf(" After swapping, value of a = %.2f\n " , a);
+  printf("After swapping, value of b = %.2f\n " , b);
+
+
+  printf("########################################################################");
+
+
+
+
+    return 0 ;
+
+}
+
+
+
+------------------------------------------------------------------------
+
+EX7:
+
+
+#include <stdio.h>
+
+int main() {
+    int a, b;
+
+    // Input values
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    // Swapping using XOR
+    a = a ^ b;
+    b = a ^ b;
+    a = a ^ b;
+
+    // Output swapped values
+    printf("After swapping: a = %d, b = %d\n", a, b);
+
+    return 0;
+}
